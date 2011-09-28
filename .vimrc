@@ -7,7 +7,7 @@ set makeprg=php\ -l\ %
 set errorformat=%m\ in\ %f\ on\ line\ %l
 let php_sql_query=1
 let php_htmlInStrings=1
-colorscheme tango
+colorscheme 256-jungle
 
 " Press Space to turn off highlighting and clear any message already displayed.
 :noremap <silent> <Space> :silent noh<Bar>echo<CR>
