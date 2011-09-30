@@ -1,3 +1,10 @@
+
+# source custom rc file
+if [ -e '.customrc' ]
+then
+	. .customrc
+fi
+
 # Colors for the pretty
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
@@ -16,11 +23,6 @@ alias la='ls -a'
 
 # easy command for nixing .pyc files
 alias rmpyc='find . -type f -name "*.pyc" -print0 | xargs -0 rm -v'
-
-
-
-# init virtualenvwrapper
-source /usr/local/bin/virtualenvwrapper.sh
 
 # add ~/bin to path
 PATH=$PATH:$HOME/bin
