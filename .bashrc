@@ -25,7 +25,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 # add ~/bin to path
 PATH=$PATH:$HOME/bin
 
-IGHT=1
+BRIGHT=1
 
 FG_BLACK=30
 FG_RED=31
