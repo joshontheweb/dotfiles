@@ -86,7 +86,7 @@ git_branch() {
     git branch 2>/dev/null|grep -e ^*|cut -d ' ' -f 2
 }
 
-PS1="${GREEN}(\$(git_branch))${RESET} "
+PS1="${GREEN}(\W:$(git_branch))${RESET} "
 
 
 
