@@ -1,9 +1,4 @@
 
-# source custom rc file
-if [ -e '.customrc' ]
-then
-	. .customrc
-fi
 
 # Colors for the pretty
 export CLICOLOR=1
@@ -93,3 +88,11 @@ git_branch() {
 
 PS1="${GREEN}(\$(git_branch))${RESET} "
 
+
+
+# source custom rc file
+# KEEP AT BOTTOM OF FILE
+if [ -e '.customrc' ]
+then
+	. .customrc
+fi
