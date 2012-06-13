@@ -31,3 +31,5 @@
 	email = josh@joshontheweb.com
 [http]
 	sslverify = false
+[push]
+	default = current
