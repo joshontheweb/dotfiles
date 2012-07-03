@@ -20,7 +20,7 @@ alias la='ls -a'
 alias rmpyc='find . -type f -name "*.pyc" -print0 | xargs -0 rm -v'
 
 # add ~/bin to path
-PATH=$PATH:$HOME/bin
+PATH=$HOME/bin:$PATH
 
 BRIGHT=1
 
