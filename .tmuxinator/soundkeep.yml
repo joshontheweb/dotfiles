@@ -2,14 +2,12 @@
 # you can make as many tabs as you wish...
 
 project_name: Soundkeep
-project_root: ~/www
+project_root: ~/
 socket_name: soundkeep # Not needed.  Remove to use default socket
-rvm: 1.9.2@rails_project
 pre: echo 'PRE TMUX SCRIPT RUNNING'
 tabs:
-  - proxy: sudo node proxy/server.js
-  - sklaunch: node sklaunch/server.js
-  - soundkeep: node soundkeep/server.js
-  - queue: node soundkeep/queue/server.js
+  - proxy: cd www/proxy && sudo node server.js
+  - sklaunch: cd www/sklaunch && node server.js
+  - soundkeep: cd www/soundkeep && node server.js
+  - queue: cd www/soundkeep/queue && node server.js
   - top: top
-  - bash: 
