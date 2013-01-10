@@ -19,6 +19,8 @@ alias la='ls -a'
 # easy command for nixing .pyc files
 alias rmpyc='find . -type f -name "*.pyc" -print0 | xargs -0 rm -v'
 
+export EDITOR='vi'
+
 # add ~/bin to path
 PATH=$HOME/bin:$PATH
 
@@ -88,7 +90,8 @@ git_branch() {
 
 PS1="\W:${GREEN}\$(git_branch)${RESET} "
 
-
+# Tmuxinator autocomplete
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 # source custom rc file
 # KEEP AT BOTTOM OF FILE
