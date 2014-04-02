@@ -3,8 +3,8 @@ call pathogen#helptags()
 
 syntax on
 set nu
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set autoindent
 set errorformat=%m\ in\ %f\ on\ line\ %l
 colorscheme 256-jungle

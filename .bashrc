@@ -16,6 +16,10 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 alias ll='ls -l'
 alias la='ls -a'
 
+# bind up and down arrows to history search
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+
 # easy command for nixing .pyc files
 alias rmpyc='find . -type f -name "*.pyc" -print0 | xargs -0 rm -v'
 
