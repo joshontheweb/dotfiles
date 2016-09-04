@@ -92,7 +92,7 @@ git_branch() {
     git branch 2>/dev/null|grep -e ^*|cut -d ' ' -f 2
 }
 
-PS1="\W:${GREEN}\$(git_branch)${RESET} "
+PS1="${YELLOW}`hostname`${RESET}:\W:${GREEN}\$(git_branch)${RESET} "
 
 # Tmuxinator autocomplete
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
